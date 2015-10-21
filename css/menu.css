@@ -1,0 +1,52 @@
+.stuff_menu{
+		background-color: #f2f2f2;
+	    position: relative;
+	    height: 12%;
+	   
+}
+.stuff_menuLast{
+		background-color: #f2f2f2;
+	    position: relative;
+	    height: 80px;
+	   
+}
+#abs{
+	position: absolute;
+	width: 8%;
+	min-width: 65px;
+
+}
+
+#hamburger{
+	    width: 45%;
+	    margin-left: 26%;
+	    margin-top: 19%;
+	
+
+}
+.img_pos{
+	    width: 45%;
+	    margin-left: 26%;
+	    margin-top: 19%;
+}
+
+#little_two{
+		top: 12%;
+
+}
+#little_th{
+		top: 22%;
+}
+#little_f{
+    	top: 34%;
+}
+#little_five{
+		 top: 46%;
+}
+#little_six{
+		 top: 58%;
+}
+@media (max-width: 800px) {
+		body{
+    			width: 800px;
+}
