@@ -1,52 +1,131 @@
+/* Declarar colores */
+.blue-box{
+  background-color: #25c8c0;
+  color: #fff;
+}
+.red-box{
+  background-color: #e75d61 ;
+  color: #fff;
+}
+.gray{
+  color:  #999999;
+}
+.red{
+  color: #e75d61;
+}
+.red-dark{
+  background-color: #d12225;
+  left: 7px;
+  position: absolute;
+  width: 7px;
+  height: 100%;
+}
+.blue{
+  color: #00adb6;
+}
+.blue-dark{
+  background-color: #007873;
+  left: 7px;
+  position: absolute;
+  width: 7px;
+  height: 100%;
+}
+/* Fin colores */
+#info{
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+.small-space{
+  margin-top: 2%;
+}
+.top-space{
+  margin-top: 4%;
+}
+.text{
+  font-size: 18px;
+}
+.bold{
+  font-weight: bold;
+}
+#NivelSuperior{
+  margin-top:90px;
+}
+.header{
+  font-size: 30px;
+  font-weight: bold;
+}
+#head{
+  /*width: 92%;*/
+  position: fixed;
+  right: 0;
+  background-color: #00adb6;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bolder;
+  height: 73px;
+  z-index: 100;
+}
+#head p{
+  margin-top: 0.5%;
+  margin-left: 0.5%;
+  width: 85%;
+}
+#head img{
+  position: absolute;
+  width: 12%;
+  right: 1%;
+  top: 10%;
+}
+
 .stuff_menu{
-		background-color: #f2f2f2;
-	    position: relative;
-	    height: 12%;
-	   
+  background-color: #f2f2f2;
+  position: relative;
+  height: 12%;
+
 }
 .stuff_menuLast{
-		background-color: #f2f2f2;
-	    position: relative;
-	    height: 80px;
-	   
+  background-color: #f2f2f2;
+  position: relative;
+  height: 80px;
+
 }
 #abs{
-	position: absolute;
-	width: 8%;
-	min-width: 65px;
-
+  position: fixed;
+  padding: 0;
+  /*width: 8%;*/
+  /*min-width: 65px;*/
 }
 
 #hamburger{
-	    width: 45%;
-	    margin-left: 26%;
-	    margin-top: 19%;
-	
-
+  width: 45%;
+  margin-left: 26%;
+  margin-top: 19%;
 }
 .img_pos{
-	    width: 45%;
-	    margin-left: 26%;
-	    margin-top: 19%;
+  width: 45%;
+  margin-left: 26%;
+  margin-top: 19%;
 }
 
 #little_two{
-		top: 12%;
+  top: 12%;
 
 }
 #little_th{
-		top: 22%;
+  top: 22%;
 }
 #little_f{
-    	top: 34%;
+  top: 34%;
 }
 #little_five{
-		 top: 46%;
+  top: 46%;
 }
 #little_six{
-		 top: 58%;
+  top: 58%;
 }
-@media (max-width: 800px) {
-		body{
-    			width: 800px;
-}
+/*@media (max-width: 800px) {*/
+  /*body{*/
+    /*width: 800px;*/
+  /*}*/
+/*}*/
