@@ -11,7 +11,7 @@
     <title>Index</title>
   </head>
   <body>
-    <div id="abs" class='col-xs-2 col-sm-1 col-md-1'>
+    <section id="abs" class='col-xs-2 col-sm-1 col-md-1 hidden-xs'>
       <div id="little_one" class="stuff_menu">
         <img class="" id="hamburger"  src="css/img/icon_1hamburger.svg"></img>
       </div>
@@ -21,28 +21,44 @@
       <div id="little_th" class="stuff_menu">
         <img class="img_pos"  src="css/img/icon_3prepaybachillerato.svg"></img>
       </div>
-      <a>
-        <div id="little_f" class="stuff_menu">
-          <img class="img_pos"  src="css/img/icon_4nivelsuperior.svg"></img>
-        </div>
-      </a>
-      <a >
-        <div id="little_five" class="stuff_menu">
-          <img class="img_pos" src="css/img/icon_5recuerda.svg"></img>
-        </div>
-      </a>
+      <div id="little_f" class="stuff_menu">
+        <img class="img_pos"  src="css/img/icon_4nivelsuperior.svg"></img>
+      </div>
+      <div id="little_five" class="stuff_menu">
+        <img class="img_pos" src="css/img/icon_5recuerda.svg"></img>
+      </div>
       <div id="little_six" class="stuff_menuLast">
         <img class="img_pos" src="css/img/icon_6cursos.svg"></img>
       </div>
-    </div>
-    <section id='head' class='col-xs-10 col-sm-11 col-md-11'>
+    </section>
+    <section id='head' class='col-xs-12 col-sm-11 col-md-11'>
       <p>REALIZA TUS ESTUDIOS EN LÍNEA</p>
       <img src='css/img/logo.svg'>
     </section>
+    <section id='responsive-menu' align='center'class='col-xs-12 visible-xs'>
+      <div id="uno" class='opt'>
+        <img class=src="css/img/icon_1hamburger.svg"></img>
+      </div>
+      <div id="dos" class='opt'>
+        <img   src="css/img/icon_2estudiar en línea.svg"></img>
+      </div>
+      <div id="tres" class='opt'>
+        <img   src="css/img/icon_3prepaybachillerato.svg"></img>
+      </div>
+      <div id="cuatro" class='opt'>
+        <img  src="css/img/icon_4nivelsuperior.svg"></img>
+      </div>
+      <div id="cinco" class='opt'>
+        <img  src="css/img/icon_5recuerda.svg"></img>
+      </div>
+      <div id="seis" class='opt'>
+        <img  src="css/img/icon_6cursos.svg"></img>
+      </div>
+    </section>
     <section id='content'>
-      <section id='NivelSuperior' class='col-xs-10 col-sm-10 col-md-10 col-xs-offset-2 col-sm-offset-1 col-md-offset-1'>
+      <section id='NivelSuperior' class='col-xs-12 col-sm-10 col-md-10 col-xs-offset-0 col-sm-offset-1 col-md-offset-1'>
         <div class="col-xs-12 col-md-12">
-          <div class='col-xs-8 col-sm-8 col-md-8'>
+          <div class='col-xs-12 col-sm-8 col-md-8'>
             <p class='header blue'>Nivel superior</p>
             <p class='text gray'>
               Realizar estudios superiores en línea te permite crecer
@@ -57,20 +73,20 @@
               que te ayude a identificar tus fortalezas y aptitudes.
             </p>
           </div>
-          <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="col-xs-6 col-sm-4 col-md-4 col-xs-offset-3 col-sm-offset-0">
             <img src="css/img/nivelsuperior.svg" class='col-xs-12 col-md-12'></img>
           </div>
         </div>
         <div class="col-xs-12 col-md-12">
           <a href='http://www.decidetusestudios.sep.gob.mx/vista/test-vocacional/' target='_blank'>
-            <div class="blue-box col-xs-4 col-sm-4 col-md-3">
+            <div class="blue-box col-xs-8 col-sm-4 col-md-3 col-xs-offset-2 col-sm-offset-0">
               <div class="blue-dark"></div>
               <p class='text bold'>Test vocacional</p>
             </div>
           </a>
         </div>
         <div class="col-xs-12 col-md-12 top-space">
-          <div class="col-xs-6 col-sm-5 col-md-5">
+          <div class="col-xs-12 col-sm-5 col-md-5">
             <div class="red-box col-xs-12 col-sm-12 col-md-12">
               <div class="red-dark"></div>
               <p class='text bold'>
@@ -104,7 +120,7 @@
               </p>
             </div>
           </div>
-          <div id='info' class="col-xs-6 col-sm-7 col-md-7 red-box">
+          <div id='info' class="col-xs-12 col-sm-7 col-md-7 red-box">
             <p class='text'>
               Esta universidad es una opción educativa de
               calidad, totalmente a distancia y gratuita. Ofrece
@@ -121,9 +137,9 @@
           </div>
         </div>
       </section>
-      <section id='Cursos' class='col-xs-10 col-sm-10 col-md-10 col-xs-offset-2 col-sm-offset-1 col-md-offset-1 top-space'>
+      <section id='Cursos' class='col-xs-12 col-sm-10 col-md-10 col-xs-offset-0 col-sm-offset-1 col-md-offset-1 top-space'>
         <div class="col-xs-12 col-md-12">
-          <div class='col-xs-8 col-sm-8 col-md-8'>
+          <div class='col-xs-12 col-sm-8 col-md-8'>
             <p class='header red'>Cursos</p>
             <p class='text gray line'>
               Además de las opciones que te hemos mostrado, cada vez existen más
@@ -136,7 +152,7 @@
               tutoriales, cursos y talleres que puedes aprovechar.
             </p>
           </div>
-          <div class='col-xs-4 col-sm-4 col-md-4'>
+          <div class='hidden-xs col-sm-4 col-md-4 col-sm-offset-0'>
             <img src='css/img/images_iconocursos.svg' id='img-curso' class='col-xs-12 col-md-8'>
           </div>
         </div>
@@ -251,7 +267,29 @@
               </div>
             </div>
           </div>
-
+        </div>
+      </section>
+      <section id='Recuerda' class='top-space col-xs-12 col-sm-10 col-md-10 col-xs-offset-0 col-sm-offset-1 col-md-offset-1'>
+        <div class="col-xs-12 col-md-12">
+          <div id='recuerda-cont' class='col-xs-12 col-sm-8 col-md-8'>
+            <p class='header blue'>Recuerda</p>
+            <p class='text'>
+              Contar con una buena formación académica es una gran
+              herramienta para ampliar tus posibilidades en el futuro.
+              Con el uso de las tecnologías, solo es cuestión de
+              organizarte para completar tus estudios de una forma
+              sencilla y con la misma validez de un sistema presencial.
+            </p>
+            <p class='text'>
+              Esperamos que este tutorial te haya sido de utilidad. Te
+              invitamos a visitar el portal de Mujer Migrante para conocer
+              más acerca de este y otros temas.
+            </p>
+            <p class='text'>¡Hasta pronto!</p>
+          </div>
+          <div class='col-xs-6 col-sm-4 col-md-4'>
+            <img src='css/img/recuerda.svg' id='img-recuerda' class='col-xs-12 col-md-12'>
+          </div>
         </div>
       </section>
     </section>

@@ -8,8 +8,6 @@
   background: #fff;
 }
 .contenedor-img .mascara,.contenedor-img .contenido {
-  /*width: 300px;*/
-  /*height: 200px;*/
   position: absolute;
   overflow: hidden;
   height: 100%;
@@ -25,7 +23,7 @@
 }
 .ejemplo-3 .mascara {
   background-color: #f2f2f2;
-  transform: translateX(-100%);/*Desplazamos 300px a la izquierda*/
+  transform: translateX(-100%);/*Desplazamos a la izquierda*/
   opacity: 1;
   transition: all 0.4s ease-in-out;
 }
@@ -69,7 +67,35 @@
   width: 7px;
   height: 100%;
 }
+.selected{
+  background-color: #00adb6 !important ;
+}
 /* Fin colores */
+#responsive-menu{
+  position: fixed;
+  top: 72px;
+  z-index: 100;
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#abs div{
+  cursor: pointer;
+}
+.opt{
+  width: 50px;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+#recuerda-cont{
+  background-color: #e5f7f8;
+}
+#img-recuerda{
+  position: absolute;
+  right: 4.5%;
+}
 #img-curso{
   left: -31px;
   top: 49px;
@@ -171,8 +197,22 @@
 #little_six{
   top: 58%;
 }
-/*@media (max-width: 800px) {*/
-  /*body{*/
-    /*width: 800px;*/
-  /*}*/
-/*}*/
+@media (max-width: 920px) {
+  #head{
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #info{
+    position: relative;
+    margin-top: 4%;
+  }
+  #NivelSuperior{
+    margin-top: 150px;
+  }
+}
+@media (max-width: 650px) {
+  #head{
+    font-size: 25px;
+  }
+}
