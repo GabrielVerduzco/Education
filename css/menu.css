@@ -39,10 +39,12 @@
 .blue-box{
   background-color: #25c8c0;
   color: #fff;
+  border-left: 7px solid #00adb6;
 }
 .red-box{
   background-color: #e75d61 ;
   color: #fff;
+  border-left: 7px solid #e75d61;
 }
 .gray{
   color:  #999999;
@@ -52,7 +54,7 @@
 }
 .red-dark{
   background-color: #d12225;
-  left: 7px;
+  left: 0px;
   position: absolute;
   width: 7px;
   height: 100%;
@@ -62,7 +64,7 @@
 }
 .blue-dark{
   background-color: #007873;
-  left: 7px;
+  left: 0px;
   position: absolute;
   width: 7px;
   height: 100%;
