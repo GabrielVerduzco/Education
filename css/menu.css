@@ -6,6 +6,10 @@
   text-align: center;
   cursor: default;
   background: #fff;
+  padding: 0;
+}
+.contenedor-img img{
+  padding: 0;
 }
 .contenedor-img .mascara,.contenedor-img .contenido {
   position: absolute;
@@ -71,6 +75,9 @@
   background-color: #00adb6 !important ;
 }
 /* Fin colores */
+#selectors > div{
+  cursor: pointer;
+}
 #responsive-menu{
   position: fixed;
   top: 72px;
