@@ -1,4 +1,11 @@
 $(document).ready(function() {
+   $('[data-toggle="tooltip"]').tooltip();
+
+  $("#little_five").click(function() {
+    $('html,body').animate({scrollTop: $("#Cursos").offset().top-90}, 1000);
+    $('.selected').removeClass('selected');
+    $(this).addClass('selected');
+  });   
   $("#little_five").click(function() {
     $('html,body').animate({scrollTop: $("#Cursos").offset().top-90}, 1000);
     $('.selected').removeClass('selected');
