@@ -30,10 +30,100 @@ var info = {
     link3: "http://uveg.edu.mx/index.php/noticias/?id=168"
   }
 }
+var infoDos = {
+  opt1: {
+    text: "Es un proyecto público, flexible y completamente gratuito que se imparte en todo México. Puedes acceder a su plataforma de estudio las 24 horas del día, lo cual te permite elegir el horario más adecuado para ti.",
+    link1: "http://www.prepaenlinea.sep.gob.mx/",
+   
+    link3: "http://www.prepaenlinea.sep.gob.mx/registro-aspirantes"
+  },
+  opt2: {
+    text: "<p>Además de recibir tu certificado de bachillerato, en el BTBD puedes obtener un título técnico en alguna de las especialidades que se ofrecen. Sus programas son de la misma calidad y reconocimiento que los presenciales.</p>",
+    link1: "http://www.polivirtual.ipn.mx/Paginas/inicio.aspx",
+   
+    link3: "https://www.admision.ipn.mx/sd/convocatoria/"
+  },
+  opt3: {
+    text: "<p>Si vives fuera de México, esta plataforma es ideal para ti. Con ella puedes cursar y terminar tus estudios con un programa completo y actualizado, aprovechando al máximo la modalidad en línea.</p>",
+    link1: "http://www.bunam.unam.mx/extranjero/",  
+    link3: "#"
+  },
+  opt4: {
+    text: "<p>Este modelo abarca distintas especializaciones y cuenta con un enfoque formativo basado en competencias, enriquecido por las tecnologías de la información y la comunicación. Además, te permite gestionar el reconocimiento de certificados en Estados Unidos.</p>",
+    link1: "http://www.udgvirtual.udg.mx/ ",
+    link3: "http://www.udgvirtual.udg.mx/pasos/paso_inicio.html"
+  },
+  opt5: {
+    text: "<p>Este bachillerato te ofrece un modelo educativo flexible y en línea a bajo costo. Cuenta con una preparación científico-humanista que brinda capacidades para seguir aprendiendo y mejorar tus condiciones de trabajo.</p>",
+    link1: "http://www.uveg.edu.mx/index.php/estudia-en-la-uveg/bachinicio",
+    link3: "http://www.uveg.edu.mx/index.php/como-bach/registro-bach"
+  }
+}
+
+
 $(document).ready(function() {
   listeners();
   nivelSuperior();
+  nivelBachi();
 });
+function nivelBachi () {
+  $("#sep2").on('click', function  () {
+    //$("#selectors div").removeClass('red-box').children().first().removeClass('red-dark');
+    $("#selectors2 .red-box").removeClass('red-box').addClass('blue-box').children().first().removeClass('red-dark').addClass('blue-dark');
+    $(this).removeClass('blue-box').addClass('red-box').children().first().removeClass("blue-dark").addClass("red-dark");
+    $("#info-cont2").html(infoDos.opt1.text);
+    $("#im-three").removeAttr("data-toggle", "modal");
+    $("#im-three").removeAttr("data-target", "#myModal");
+    $("#im-one").attr("href", infoDos.opt1.link1);
+    $("#im-three").attr("href", infoDos.opt1.link3);
+  });
+
+   $("#ipn2").on('click', function  () {
+    //$("#selectors div").removeClass('red-box').children().first().removeClass('red-dark');
+    $("#selectors2 .red-box").removeClass('red-box').addClass('blue-box').children().first().removeClass('red-dark').addClass('blue-dark');
+    $(this).removeClass('blue-box').addClass('red-box').children().first().removeClass("blue-dark").addClass("red-dark");
+    $("#info-cont2").html(infoDos.opt2.text);
+    $("#im-three").removeAttr("data-toggle", "modal");
+    $("#im-three").removeAttr("data-target", "#myModal");
+    $("#im-one").attr("href", infoDos.opt1.link1);
+    $("#im-three").attr("href", infoDos.opt1.link3);
+  });
+
+   $("#unam2").on('click', function  () {
+    //$("#selectors div").removeClass('red-box').children().first().removeClass('red-dark');
+    $("#selectors2 .red-box").removeClass('red-box').addClass('blue-box').children().first().removeClass('red-dark').addClass('blue-dark');
+    $(this).removeClass('blue-box').addClass('red-box').children().first().removeClass("blue-dark").addClass("red-dark");
+    $("#info-cont2").html(infoDos.opt3.text);
+    $("#im-one").attr("href", infoDos.opt3.link1);
+    $("#im-three").attr("data-toggle", "modal");
+    $("#im-three").attr("data-target", "#myModal");
+  });
+
+
+   $("#udg2").on('click', function  () {
+    //$("#selectors div").removeClass('red-box').children().first().removeClass('red-dark');
+    $("#selectors2 .red-box").removeClass('red-box').addClass('blue-box').children().first().removeClass('red-dark').addClass('blue-dark');
+    $(this).removeClass('blue-box').addClass('red-box').children().first().removeClass("blue-dark").addClass("red-dark");
+    $("#info-cont2").html(infoDos.opt4.text);
+    $("#im-three").removeAttr("data-toggle", "modal");
+    $("#im-three").removeAttr("data-target", "#myModal");
+    $("#im-one").attr("href", infoDos.opt4.link1);
+    $("#im-three").attr("href", infoDos.opt4.link3);
+  });
+
+  $("#uveg2").on('click', function  () {
+    //$("#selectors div").removeClass('red-box').children().first().removeClass('red-dark');
+    $("#selectors2 .red-box").removeClass('red-box').addClass('blue-box').children().first().removeClass('red-dark').addClass('blue-dark');
+    $(this).removeClass('blue-box').addClass('red-box').children().first().removeClass("blue-dark").addClass("red-dark");
+    $("#info-cont2").html(infoDos.opt5.text);
+    $("#im-three").removeAttr("data-toggle", "modal");
+    $("#im-three").removeAttr("data-target", "#myModal");
+    $("#im-one").attr("href", infoDos.opt5.link1);
+    $("#im-three").attr("href", infoDos.opt5.link3);
+  });
+
+}
+
 function nivelSuperior () {
   $("#sep").on('click', function  () {
     //$("#selectors div").removeClass('red-box').children().first().removeClass('red-dark');
@@ -80,6 +170,7 @@ function nivelSuperior () {
 }
 function listeners () {
   $('[data-toggle="tooltip"]').tooltip();
+  $('.stuff_menu').tooltip({ container: 'body' }) 
 
   $("#little_five").click(function() {
     $('html,body').animate({scrollTop: $("#Cursos").offset().top-90}, 1000);
